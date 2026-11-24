@@ -16,8 +16,4 @@ services:
       - key: ALLOWED_ORIGINS
         value: "*"
       - key: DATABASE_URL
-        value: sqlite:////data/app.db
-    disk:
-      name: lyftr-data
-      mountPath: /data
-      sizeGB: 1
+        value: sqlite:////tmp/app.db
