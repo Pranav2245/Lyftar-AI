@@ -15,7 +15,7 @@ _response_cache: Dict[str, Dict[str, Any]] = {}
 
 def _get_config():
     keys = [k.strip() for k in os.getenv("LLM_API_KEYS", "").split(",") if k.strip()]
-    model = os.getenv("LLM_MODEL", "gemini/gemini-3-flash-preview")
+    model = os.getenv("LLM_MODEL", "gemini/gemini-flash-lite-latest")
     enable_sim = os.getenv("ENABLE_FAILURE_SIMULATION", "false").lower() == "true"
     return keys, model, enable_sim
 
