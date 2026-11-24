@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ChatMessage from './components/ChatMessage';
 
-const API_BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_BACKEND_URL || '';
 
 function App() {
   const [sessionId, setSessionId] = useState('');
